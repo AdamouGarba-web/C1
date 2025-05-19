@@ -1,11 +1,8 @@
 #!/bin/bash
-
 # Affiche l'utilisation globale du disque
 echo "Utilisation globale du disque :"
 df -h /
-
 echo ""
-
 # Si un répertoire est fourni en argument, afficher son poids
 if [ -n "$1" ]; then
   if [ -d "$1" ]; then
